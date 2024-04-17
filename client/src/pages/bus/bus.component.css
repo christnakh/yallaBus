@@ -1,0 +1,83 @@
+/* Add your component-specific styles here */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.logout {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+
+.logout:hover {
+  color: #f0f0f0;
+}
+
+.container {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+  max-width: 800px;
+  width: 90%;
+  margin: 20px auto;
+}
+
+h2 {
+  color: #007bff;
+}
+
+p {
+  color: #555;
+  line-height: 1.5;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.error {
+  color: #ff6347;
+}
+
+.route-container {
+  padding-left: 60px;
+}
+

@@ -1,0 +1,114 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Apply a professional font and spacing */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/* Style the table container */
+.table-container {
+  width: 100%;
+  max-width: 1200px; /* Increased max-width for larger screens */
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+/* Header row styles */
+th {
+  background-color:  #027FFF; /* Blue header background */
+  color: #fff;
+  text-align: left;
+  padding: 15px;
+  font-weight: bold;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Data row styles */
+tr {
+  border-bottom: 1px solid #ccc;
+}
+
+/* Alternate row background color */
+tr:nth-child(even) {
+  background-color: #ecf0f1; /* Light gray alternate row */
+}
+
+/* Cell styles */
+td {
+  padding: 15px;
+}
+
+/* Input styles */
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Button styles */
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Active button style */
+button.active {
+  background-color: #27ae60; /* Green for active */
+  color: #fff;
+}
+
+/* Inactive button style */
+button.inactive {
+  background-color: #e74c3c; /* Red for inactive */
+  color: #fff;
+}
+
+/* Blocked button style */
+button.blocked {
+  background-color: #f39c12; /* Orange for blocked */
+  color: #fff;
+}
+
+/* Unblocked button style */
+button.unblocked {
+  background-color:  #027FFF; /* Blue for unblocked */
+  color: #fff;
+}
+
+/* Approved button style */
+button.approved {
+  background-color: #2ecc71; /* Light green for approved */
+  color: #fff;
+}
+
+/* Unapproved button style */
+button.unapproved {
+  background-color: #95a5a6; /* Gray for unapproved */
+  color: #fff;
+}
+
+/* Button container */
+td button {
+  margin-right: 5px;
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Page</title>
+</head>
+<body>
+  <div class="navbar">
+    <div class="logo">
+      <h3>Raja Ismail</h3>
+    </div>
+    <a href="#" class="logout">Logout</a>
+  </div>
+
+  <div class="content">
+    <div class="user-page">
+      <h1>Request a trip</h1>
+      <div class="search-form">
+        <label for="routeId">Select Route: </label>
+        <select id="routeId" name="routeId" [(ngModel)]="routeId" required>
+          <option *ngFor="let route of routes" [value]="route.id">{{ route.name }}</option>
+        </select>
+        <button class="search-button" (click)="fetchDeparturesAndDestinations()">Search</button>
+      </div>
+      <div *ngIf="departures.length > 0 && destinations.length > 0">
+        <div class="route-selection">
+          <div class="route-select">
+            <label for="departId">Departure: </label>
+            <select id="departId" name="departId" [(ngModel)]="departId" required>
+              <option *ngFor="let depart of departures" [value]="depart.id">{{ depart.stopName }}</option>
+            </select>
+          </div>
+          <div class="route-select">
+            <label for="destinationId">Destination: </label>
+            <select id="destinationId" name="destinationId" [(ngModel)]="destinationId" required>
+              <option *ngFor="let destination of destinations" [value]="destination.id">{{ destination.stopName }}</option>
+            </select>
+          </div>
+        </div>
+        <div class="pickup-inputs">
+          <label for="pickupDate">Pickup Date: </label>
+          <input type="datetime-local" id="pickupDate" name="pickupDate" [(ngModel)]="pickupDate" required>
+          <button type="submit" class="pickup-button" (click)="submitPickup()">Submit Pickup</button>
+        </div>
+
+      </div>
+      <div class="map-container">
+        <div id="map" style="width: 100%; height: 100%;"></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

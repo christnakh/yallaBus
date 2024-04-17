@@ -1,0 +1,32 @@
+{
+  "name": "muslimapi",
+  "version": "1.0.0",
+  "description": "Node.js Restful CRUD API With Node.js, Express and MySQL for MuslimsGate",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node project_API.js"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "mysql",
+    "restapi"
+  ],
+  "author": "Jad",
+  "license": "ISC",
+  "dependencies": {
+    "@sendgrid/mail": "^7.6.2",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
+    "nodemailer": "^6.7.4",
+    "route-parser": "0.0.5",
+    "swagger-ui-express": "^4.1.4",
+    "ws": "^8.13.0",
+    "xmlhttprequest": "^1.8.0"
+  }
+}

@@ -1,0 +1,226 @@
+.signup a{
+  text-decoration: none;
+}
+::ng-deep.mat-form-field-appearance-legacy .mat-form-field-underline{
+  display: none;
+}
+.mat-mdc-form-field{
+  min-width: 100%;
+}
+::ng-deep.mdc-line-ripple::before{
+  display: none;
+}
+::ng-deep .mat-email .mdc-text-field ,::ng-deep .mat-pass .mdc-text-field {
+  padding: 0;
+}
+::ng-deep .mat-pass .mat-mdc-form-field-error-wrapper{
+  padding: 0;
+}
+::ng-deep .mat-email .mat-mdc-form-field-error-wrapper{
+  padding: 0;
+}
+::ng-deep .centred  .mdc-text-field--no-label:not(.mdc-text-field--outlined):not(.mdc-text-field--textarea) .mat-mdc-form-field-infix{
+padding: 0 0;
+}
+::ng-deep .centred .mat-mdc-form-field-infix{
+min-height:48px;
+}
+.login-page .row>*{
+  padding-right: 0px ;
+}
+.align-screen{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.logo{
+  width: 250px;
+}
+.col-login {
+  width:360px;
+}
+::ng-deep .centred .mat-form-field-appearance-legacy .mat-form-field-infix{
+  padding:0 0;
+}
+.title-login {
+  margin-top: 50px;
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 36px;
+}
+.slogan-login {
+  font-family: 'Work Sans';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #78828A;
+  margin-top: 12px;
+}
+.label-login-pass {
+  margin-top: 6.5px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: 'Work Sans';
+  color: #78828A;
+}
+.label-login-email {
+  margin-top: 31.5px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: 'Work Sans';
+  color: #78828A;
+}
+::ng-deep .email-error{
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #EB5757;
+}
+::ng-deep .password-error{
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #EB5757;
+  margin-top: 10px;
+}
+::ng-deep .mdc-text-field--filled:not(.mdc-text-field--disabled){
+  background-color: transparent;
+}
+.tag-email {
+  border: 1px solid #E3E9ED;
+  background: #FDFDFD;
+  border-radius: 8px;
+  padding: 12px 12px 12px 12px;
+  font-family: 'Work Sans';
+  font-size: 16px;
+  font-weight: 400;
+}
+.tag-pass {
+  border: 1px solid #E3E9ED;
+  background: #FDFDFD;
+  border-radius: 8px;
+  padding: 12px 52px 12px 12px;
+  font-family: 'Work Sans';
+  font-size: 16px;
+  font-weight: 400;
+}
+.rem-forget {
+  margin-top: 20px;
+}
+.password{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: stretch;
+    align-items: flex-end;
+}
+.hidePass{
+  margin-top: -34px;
+  margin-right: 16px;
+  z-index: 1;
+  cursor: pointer;
+
+}
+::ng-deep .password .mat-icon{
+  color: #78828A;
+
+}
+.remember-pass {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #1F2C37;
+}
+.forgetPass a {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #027FFF !important;
+}
+::ng-deep .remember-pass  .mat-checkbox-frame{
+width: 16px;
+height: 16px;
+border-color: #D0D5DD!important;
+border-width: 1px!important;
+}
+.btn-login {
+  width: 360px;
+  padding: 12px 16px;
+  font-size: 16px;
+  border: 0px;
+  background: #1174b4;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 12px;
+  margin-top: 23px;
+  margin-bottom: 32px;
+}
+.signup {
+  text-align: center;
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #1F2C37;
+}
+.signup a{
+  font-family: 'Work Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 20px;
+color: #027FFF!important;
+}
+.image-login {
+  /* background-color: #b7b8bb; */
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  justify-content: center;
+  align-items: center;
+}
+.img-login{
+border-top: 6px solid #EDEDED;
+border-left: 6px solid #EDEDED;
+border-bottom: 6px solid #EDEDED;
+border-top-left-radius: 12px;
+border-bottom-left-radius: 12px;
+box-shadow: rgba(0, 0, 0, 0.07) 0px 2px 1px, rgba(0, 0, 0, 0.07) 0px 4px 2px, rgba(0, 0, 0, 0.07) 0px 8px 4px, rgba(0, 0, 0, 0.07) 0px 16px 8px, rgba(0, 0, 0, 0.07) 0px 32px 16px;
+}
+@media screen and (max-width: 1060px) {
+  .image-login {
+    display: none;
+
+  }
+  .align-screen{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .image-login {display: none;
+
+  }
+  .align-screen{
+    width: 100%;
+  }
+}
+
+

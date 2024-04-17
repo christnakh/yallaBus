@@ -1,0 +1,140 @@
+/* styles.css */
+
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.logout {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+
+.logout:hover {
+  color: #f0f0f0;
+}
+
+.content {
+  margin: 20px;
+}
+
+.user-page {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.user-page h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+}
+
+.search-form label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.search-button {
+  margin-left:5px ;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 30px;
+  cursor: pointer;
+  width: 80px;
+  height: 35px;
+  transition: background-color 0.3s;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+.route-selection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.route-select {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.pickup-inputs {
+  margin-top: 15px;
+}
+
+.pickup-inputs label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.pickup-inputs select,
+.pickup-inputs input[type="datetime-local"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.pickup-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.pickup-button:hover {
+  background-color: #0056b3;
+}
+
+.map-container {
+  margin-top: 20px;
+  height: 300px;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Add any additional styles and adjustments as needed */

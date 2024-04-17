@@ -1,0 +1,61 @@
+
+<p-dialog header="Header"  [(visible)]="pVisibility" [style]="{ width: '50vw' }">
+  <ng-template pTemplate="header">
+      <span class="text-xl font-bold">Please Try Again</span>
+  </ng-template>
+  <p>
+     {{message}}
+  </p>
+
+</p-dialog>
+<div class=" container login-page">
+    <div class="row " >
+    <div class="col-6 align-screen">
+        <div class=" col-login centred ">
+            <div class="title">
+                <div><img  class="logo" src="../../assets/logo.png"></div>
+                 <div class="title-login">Log in</div>
+                <div class="slogan-login"> Welcome back! Please enter your details.</div>
+            </div>
+            <form class="form" [formGroup]="loginform" (ngSubmit)="submitlogin()">
+                <div class="row ">
+                    <div class="col-12">
+                        <label class="label-login-email">Email</label>
+                        <mat-form-field class="mat-email">
+                            <input formControlName="Email" class="tag-email" matInput #email>
+                            <mat-error *ngIf="loginform.get('Email')?.invalid" class="email-error">Please provide a valid email address</mat-error>
+                        </mat-form-field>
+                        <label class="label-login-pass">Password</label>
+                        <mat-form-field class="mat-pass">
+                            <div class="password">
+                                <input [type]="fieldTextType ? 'text' : 'password'" formControlName="Password" class="tag-pass" matInput #password>
+                                <mat-icon class="hidePass" aria-hidden="false" aria-label="remove_red_eye" (click)="toggleFieldTextType()">remove_red_eye</mat-icon>
+                            </div>
+                                    <mat-error *ngIf="loginform.get('Password')?.invalid" class="password-error" >Please provide a password</mat-error>
+                        </mat-form-field>
+                        <div class="row rem-forget">
+                            <div class="col-7 forgetPass">
+                                <a>Forget Password</a>
+                            </div>
+
+                        </div>
+                        <!-- <div class="row rem-forget">
+                            <div class="col-7 remember-pass">
+                                <mat-checkbox formControlName="Remember">Remember me</mat-checkbox>
+                            </div>
+                            <div class="col-5 forgetPass"> <a>Forget Password</a></div>
+                        </div> -->
+                        <div>
+                            <button  class="btn-login">Log in</button>
+                        </div>
+                        <div class="signup">Don't have an account? <a routerLink="/signup" >Sign Up</a></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="col-6 image-login">
+        <img class="img-login" src="../../assets/login.jpg">
+    </div>
+</div>
+</div>

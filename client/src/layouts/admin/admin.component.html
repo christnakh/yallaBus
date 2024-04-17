@@ -1,0 +1,29 @@
+<div class="table-container">
+  <h1>User/Driver Management</h1>
+  <table>
+      <tr>
+          <th>ID</th>
+          <th>Email</th>
+          <th>Username</th>
+          <th>Status</th>
+          <th>Actions</th>
+      </tr>
+      <tr *ngFor="let user of users">
+          <td>{{ user.id }}</td>
+          <td><input [(ngModel)]="user.email"></td>
+          <td><input [(ngModel)]="user.username"></td>
+          <td>
+              <button class="active" (click)="toggleValue(user, 'active')" *ngIf="user.active === 1">Active</button>
+              <button class="inactive" (click)="toggleValue(user, 'active')" *ngIf="user.active !== 1">Inactive</button>
+          </td>
+          <td>
+              <button class="blocked" (click)="toggleValue(user, 'blocked')" *ngIf="user.blocked === 1">Blocked</button>
+              <button class="unblocked" (click)="toggleValue(user, 'blocked')" *ngIf="user.blocked !== 1">Unblocked</button>
+              <button class="approved" (click)="toggleValue(user, 'approved')" *ngIf="user.approved === 1">Approved</button>
+              <button class="unapproved" (click)="toggleValue(user, 'approved')" *ngIf="user.approved !== 1">Unapproved</button>
+              <button (click)="updateUser(user)">Update</button>
+              <button (click)="deleteUser(user)">Delete</button>
+          </td>
+      </tr>
+  </table>
+</div>

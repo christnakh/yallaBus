@@ -1,0 +1,48 @@
+<div class=" container signup-page">
+  <div class="row " >
+  <div class="col-6 align-screen">
+      <div class=" col-signup centred ">
+          <div class="title">
+              <div style="padding-right: 120px; margin-right: 300px;"><img class="logo" src="../../assets/logo.png"></div>
+               <div class="title-signup">Create Account</div>
+              <div class="slogan-signup"> Welcome back! Please enter your details.</div>
+          </div>
+          <form class="form" [formGroup]="signupform" (ngSubmit)="submitsignup()">
+              <div class="row ">
+                  <div class="col-12">
+                      <label class="label-signup-username">UserName</label>
+                      <mat-form-field class="mat-username">
+                          <input formControlName="username" class="tag-username" matInput #email>
+                          <mat-error *ngIf="signupform.get('username')?.invalid" class="username-error">Please provide a valid email address</mat-error>
+                      </mat-form-field>
+                      <label class="label-signup-email">Email</label>
+                      <mat-form-field class="mat-email">
+                          <input formControlName="email" class="tag-email" matInput #email>
+                          <mat-error *ngIf="signupform.get('email')?.invalid" class="email-error">Please provide a valid email address</mat-error>
+                      </mat-form-field>
+                      <label class="label-signup-pass">Password</label>
+                      <mat-form-field class="mat-pass">
+                          <div class="password">
+                              <input formControlName="password" class="tag-pass" matInput #password>
+                          </div>
+                                  <mat-error *ngIf="signupform.get('password')?.invalid" class="password-error" >Please provide a password</mat-error>
+                      </mat-form-field>
+                      <label class="label-signup-type">Role</label>
+                      <mat-radio-group class="type" formControlName="levelOfAccess">
+                        <mat-radio-button [value]="2" >Driver</mat-radio-button>
+                        <mat-radio-button [value]="3" >User</mat-radio-button>
+                    </mat-radio-group>
+                      <div>
+                          <button  class="btn-signup">Register</button>
+                      </div>
+                      <div class="signin">Do you have already an account? <a routerLink="/signin" >Sign In</a></div>
+                  </div>
+              </div>
+          </form>
+      </div>
+  </div>
+  <div class="col-6 image-login">
+      <img class="img-login" src="../../assets/login.jpg">
+  </div>
+</div>
+</div>

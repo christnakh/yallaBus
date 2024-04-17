@@ -1,0 +1,9 @@
+Flask==2.3.3
+pandas==1.5.3
+flask-cors==4.0.0
+
+
+pip install scikit-learn==1.0.2
+pip install flask-cors==4.0.0
+pip install Flask==2.3.3
+pip install pandas==1.5.3
